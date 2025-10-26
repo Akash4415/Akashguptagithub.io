@@ -1,0 +1,1476 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Channel Partners.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Segment" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Product" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Discount Band" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Units Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Manufacturing Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sale Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Gross Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Discounts" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Cost Of Goods Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Profit" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Number" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Name" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Year" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Channel Partners.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Enterprise.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Segment" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Product" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Discount Band" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Units Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Manufacturing Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sale Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Gross Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Discounts" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Cost Of Goods Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Profit" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Date" />
+            <Field name="Month Number" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Name" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Year" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Enterprise.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Government.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Segment" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Product" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Discount Band" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Units Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Manufacturing Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sale Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Gross Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Discounts" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Cost Of Goods Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Profit" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Number" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Name" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Year" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Government.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Midmarket.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Segment" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Product" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Discount Band" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Units Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Manufacturing Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sale Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Gross Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Discounts" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Cost Of Goods Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Profit" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Number" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Name" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Year" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Midmarket.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Small Business.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Segment" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Country" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Product" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Discount Band" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Units Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Manufacturing Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Sale Price" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Gross Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Discounts" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Total Sales" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Cost Of Goods Sold" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Profit" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Date" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Number" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Month Name" size="255" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Year" source="File: D:\Practice\Alteryx\26th oct\Financial Sample_1\Small Business.xlsx|||`Sheet1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="246" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Country] = "France"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Country] = "France"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Country]="Mexico"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Country]="Mexico"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Country] = "Germany"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Country] = "Germany"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Country] = "United States of America"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Country] = "United States of America"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Country] = "Canada"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Country] = "Canada"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="486" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Segment","Country","Product","Discount Band","Units Sold","Manufacturing Price","Sale Price","Gross Sales","Discounts","Total Sales","Cost Of Goods Sold","Profit","Date","Month Number","Month Name","Year"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="498" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Segment","Country","Product","Discount Band","Units Sold","Manufacturing Price","Sale Price","Gross Sales","Discounts","Total Sales","Cost Of Goods Sold","Profit","Date","Month Number","Month Name","Year"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="510" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Segment","Country","Product","Discount Band","Units Sold","Manufacturing Price","Sale Price","Gross Sales","Discounts","Total Sales","Cost Of Goods Sold","Profit","Date","Month Number","Month Name","Year"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings>
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Segment","Country","Product","Discount Band","Units Sold","Manufacturing Price","Sale Price","Gross Sales","Discounts","Total Sales","Cost Of Goods Sold","Profit","Date","Month Number","Month Name","Year"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings>
+        <Position x="498" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"Segment","Country","Product","Discount Band","Units Sold","Manufacturing Price","Sale Price","Gross Sales","Discounts","Total Sales","Cost Of Goods Sold","Profit","Date","Month Number","Month Name","Year"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="-18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Units Sold" action="Count" rename="Count" />
+            <SummarizeField field="Sale Price" action="Sum" rename="Sum_Sale Price" />
+            <SummarizeField field="Gross Sales" action="Sum" rename="Sum_Gross Sales" />
+            <SummarizeField field="Discounts" action="Sum" rename="Sum_Discounts" />
+            <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+            <SummarizeField field="Cost Of Goods Sold" action="Sum" rename="Count" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+            <SummarizeField field="Country" action="GroupBy" rename="Country" />
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="Month Name" action="CountBlank" rename="CountBlank_Month Name" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month Name" action="GroupBy" rename="Month Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="822" y="-18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>Bar Chart</name>
+              <orientation>v</orientation>
+              <xsrc>Product</xsrc>
+              <ysrc>Sum_Total Sales</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Total Sales</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>2</width>
+                  <color>rgb(68, 68, 68)</color>
+                </line>
+                <color>rgb(180, 100, 31)</color>
+              </marker>
+              <textsrc>Sum_Total Sales</textsrc>
+              <textfont>
+                <size>14</size>
+              </textfont>
+              <visible>true</visible>
+            </Traces>
+            <Traces>
+              <orientation>v</orientation>
+              <type>bar</type>
+              <name>Bar Chart 2</name>
+              <xsrc>Segment</xsrc>
+              <ysrc>Sum_Profit</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>1</width>
+                </line>
+              </marker>
+              <textsrc>Sum_Profit</textsrc>
+              <textfont>
+                <size>14</size>
+              </textfont>
+            </Traces>
+            <Layout>
+              <title>
+                <text>2014 - 144932</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>14</size>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-5</range>
+                <range>15</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Product</text>
+                </title>
+                <tickfont>
+                  <size>14</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <showgrid>false</showgrid>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-1429531.1301652864</range>
+                <range>5823824.3756856881</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Sum_Total Sales</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <legend>
+                <font>
+                  <size>14</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <barmode>group</barmode>
+              <barnorm>0</barnorm>
+              <hiddenlabels json:Array="true" xmlns:json="http://james.newtonking.com/projects/json" />
+              <bargap>0.17000000000000004</bargap>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Country" action="GroupBy" rename="Country" />
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="Units Sold" action="Count" rename="Count" />
+            <SummarizeField field="Sale Price" action="Sum" rename="Sum_Sale Price" />
+            <SummarizeField field="Gross Sales" action="Sum" rename="Sum_Gross Sales" />
+            <SummarizeField field="Discounts" action="Sum" rename="Sum_Discounts" />
+            <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+            <SummarizeField field="Cost Of Goods Sold" action="Sum" rename="Sum_Cost Of Goods Sold" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month Name" action="GroupBy" rename="Month Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Country" action="GroupBy" rename="Country" />
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="Units Sold" action="Count" rename="Count" />
+            <SummarizeField field="Sale Price" action="Sum" rename="Sum_Sale Price" />
+            <SummarizeField field="Gross Sales" action="Sum" rename="Sum_Gross Sales" />
+            <SummarizeField field="Discounts" action="Sum" rename="Sum_Discounts" />
+            <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+            <SummarizeField field="Cost Of Goods Sold" action="Sum" rename="Sum_Cost Of Goods Sold" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month Name" action="GroupBy" rename="Month Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Country" action="GroupBy" rename="Country" />
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="Units Sold" action="Count" rename="Count" />
+            <SummarizeField field="Sale Price" action="Sum" rename="Sum_Sale Price" />
+            <SummarizeField field="Gross Sales" action="Sum" rename="Sum_Gross Sales" />
+            <SummarizeField field="Discounts" action="Sum" rename="Sum_Discounts" />
+            <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+            <SummarizeField field="Cost Of Goods Sold" action="Sum" rename="Sum_Cost Of Goods Sold" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month Name" action="GroupBy" rename="Month Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Segment" action="GroupBy" rename="Segment" />
+            <SummarizeField field="Country" action="GroupBy" rename="Country" />
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="Units Sold" action="Count" rename="Sum_Units Sold" />
+            <SummarizeField field="Sale Price" action="Sum" rename="Sum_Sale Price" />
+            <SummarizeField field="Gross Sales" action="Sum" rename="Sum_Gross Sales" />
+            <SummarizeField field="Discounts" action="Sum" rename="Sum_Discounts" />
+            <SummarizeField field="Total Sales" action="Sum" rename="Sum_Total Sales" />
+            <SummarizeField field="Cost Of Goods Sold" action="Sum" rename="Sum_Cost Of Goods Sold" />
+            <SummarizeField field="Profit" action="Sum" rename="Sum_Profit" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month Name" action="GroupBy" rename="Month Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="822" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>Bar Chart</name>
+              <orientation>v</orientation>
+              <xsrc>Product</xsrc>
+              <ysrc>Sum_Total Sales</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Total Sales</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>3</width>
+                </line>
+                <color>rgb(255, 127, 14)</color>
+              </marker>
+              <textsrc>Sum_Total Sales</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <visible>true</visible>
+            </Traces>
+            <Traces>
+              <orientation>v</orientation>
+              <type>bar</type>
+              <name>Bar Chart 2</name>
+              <ysrc>Sum_Profit</ysrc>
+              <visible>true</visible>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <xsrc>Segment</xsrc>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>3</width>
+                </line>
+                <color>rgb(255, 231, 14)</color>
+              </marker>
+              <textsrc>Sum_Profit</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>10.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Product</text>
+                </title>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-551121.51333333342</range>
+                <range>8041133.7533333329</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Sum_Total Sales</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <bargap>0.13</bargap>
+              <legend>
+                <x>1.6147046843177189</x>
+                <y>0.74588938714499253</y>
+              </legend>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="822" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>Bar Chart</name>
+              <orientation>v</orientation>
+              <xsrc>Product</xsrc>
+              <ysrc>Sum_Total Sales</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Total Sales</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>3</width>
+                </line>
+                <color>rgb(182, 251, 175)</color>
+              </marker>
+              <textsrc>Sum_Total Sales</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <visible>true</visible>
+            </Traces>
+            <Traces>
+              <orientation>v</orientation>
+              <type>bar</type>
+              <name>Bar Chart 2</name>
+              <xsrc>Segment</xsrc>
+              <ysrc>Sum_Profit</ysrc>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <constraintext>both</constraintext>
+              <textsrc>Sum_Profit</textsrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <visible>true</visible>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>10.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Product</text>
+                </title>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-412054.95472222229</range>
+                <range>5914056.6397222215</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Sum_Total Sales</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <barmode>overlay</barmode>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="822" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>Bar Chart</name>
+              <orientation>v</orientation>
+              <xsrc>Product</xsrc>
+              <ysrc>Sum_Total Sales</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Total Sales</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>2</width>
+                  <color>rgb(19, 17, 19)</color>
+                </line>
+                <color>rgb(177, 31, 180)</color>
+              </marker>
+              <textsrc>Sum_Total Sales</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <visible>true</visible>
+            </Traces>
+            <Traces>
+              <orientation>v</orientation>
+              <type>bar</type>
+              <name>Bar Chart 2</name>
+              <xsrc>Segment</xsrc>
+              <ysrc>Sum_Profit</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>2</width>
+                </line>
+                <color>rgb(14, 255, 212)</color>
+              </marker>
+              <textsrc>Sum_Profit</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>10.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Product</text>
+                </title>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-551145.9800000001</range>
+                <range>8058198.620000001</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Sum_Total Sales</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="834" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces>
+              <type>bar</type>
+              <mode>lines</mode>
+              <name>Bar Chart</name>
+              <stackgroup>1</stackgroup>
+              <orientation>v</orientation>
+              <xsrc>Product</xsrc>
+              <ysrc>Sum_Total Sales</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Total Sales</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>2</width>
+                </line>
+                <color>rgb(224, 249, 31)</color>
+              </marker>
+              <textsrc>Sum_Total Sales</textsrc>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <visible>true</visible>
+            </Traces>
+            <Traces>
+              <orientation>v</orientation>
+              <type>bar</type>
+              <name>Bar Chart 2</name>
+              <xsrc>Segment</xsrc>
+              <ysrc>Sum_Profit</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>sum</aggregationFunction>
+              <aggregationFieldName>Sum_Profit</aggregationFieldName>
+              <textposition>outside</textposition>
+              <marker>
+                <line>
+                  <width>2</width>
+                </line>
+              </marker>
+              <visible>true</visible>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <textsrc>Sum_Profit</textsrc>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>10.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Product</text>
+                </title>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-570660.59833333339</range>
+                <range>7339851.3683333341</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Sum_Total Sales</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\akash\AppData\Local\Temp\Alteryx\Engine_26204_e388527fc799493298441c3c59001881_\Engine_26204_8daaa07824f44238aa87833973722d4a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\akash\AppData\Local\Temp\Alteryx\Engine_26204_e388527fc799493298441c3c59001881_\Engine_26204_5ed4adddb04443969f7826a717f07ea8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\akash\AppData\Local\Temp\Alteryx\Engine_26204_e388527fc799493298441c3c59001881_\Engine_26204_d394ca31304e425b90f1c16b21ca57c5~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="930" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\akash\AppData\Local\Temp\Alteryx\Engine_26204_e388527fc799493298441c3c59001881_\Engine_26204_52f52966207e4dd2a8005725eeafb559~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\akash\AppData\Local\Temp\Alteryx\Engine_26204_e388527fc799493298441c3c59001881_\Engine_26204_31a0eb91a3304ee68ddee56fafa31b63~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="26" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="19" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="23" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="True" />
+      <Destination ToolID="20" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output26" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output26" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output26" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output26" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Data Analysis Financial_Sample1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d444271e-725e-45e5-9fa7-598ea267cd7c" />
+      <Telemetry>
+        <PreviousWorkflowId value="b3f4f086-f06d-4f1c-b0a9-37c9390af280" />
+        <OriginWorkflowId value="b3f4f086-f06d-4f1c-b0a9-37c9390af280" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
