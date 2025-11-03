@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SuperStore_Orders.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="198" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ship_mode] = "Standard Class" and [segment] = "Home Office" and 
+[category] = "Technology"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ship_mode] = "Standard Class" and [segment] = "Home Office" and 
+[category] = "...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="198" y="6" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text Box (4)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="198" y="114" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="390" y="6" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text Box (6)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="342" y="114" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="534" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text Box (8)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="738" y="42" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Numeric Up Down (11)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="654" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="606" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">D:\Practice\Alteryx\Filter.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Filter.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="390" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[sales] &gt; "5000"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[sales] &gt; "5000"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Practice\Alteryx\3rd nov\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="438" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="7" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="9" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Action" />
+      <Destination ToolID="10" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Question" />
+      <Destination ToolID="5" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="7" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Question" />
+      <Destination ToolID="9" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="12" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (4)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (8)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (11)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d91a225d-c5c3-4a78-9c9c-4c4cda310eda" />
+      <Telemetry>
+        <PreviousWorkflowId value="1cafb14c-4747-42a2-bdf9-adcf6d474627" />
+        <OriginWorkflowId value="1cafb14c-4747-42a2-bdf9-adcf6d474627" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="5" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Standard Class</ReplaceText>
+              <Destination>2/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="7" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Home Office</ReplaceText>
+              <Destination>2/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="12" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>[sales] &gt; "5000"</ReplaceText>
+              <Destination>10/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="9" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Technology</ReplaceText>
+              <Destination>2/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter the Ship mode</Description>
+              <Name>Text Box (4)</Name>
+              <ToolId value="4" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter the segment</Description>
+              <Name>Text Box (6)</Name>
+              <ToolId value="6" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Enter the category</Description>
+              <Name>Text Box (8)</Name>
+              <ToolId value="8" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Numeric Up Down (11)</Description>
+              <Name>Numeric Up Down (11)</Name>
+              <ToolId value="11" />
+              <Minimum value="5000" />
+              <Maximum value="100000" />
+              <Increment value="0" />
+              <Default value="5000" />
+              <Decimals value="0" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

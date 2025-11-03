@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SuperStore_Orders.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="150" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>segment</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-11-03 22:10:08</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Consumer</Operand>
+              <StartDate>2025-11-03 22:10:08</StartDate>
+              <EndDate>2025-11-03 22:10:08</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[segment] = "Consumer"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="66" y="30" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text Box (4)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="78" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="270" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">D:\Practice\Alteryx\Result.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Result.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="498" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SuperStore_Orders.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="618" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>category</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-11-03 23:02:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2025-11-03 23:02:16</StartDate>
+              <EndDate>2025-11-03 23:02:16</EndDate>
+              <Operand>Furniture</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[category] = "Furniture"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="order_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_date" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="ship_mode" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="customer_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="segment" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="state" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="country" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="market" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="region" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_id" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sub_category" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="product_name" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="sales" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="quantity" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="discount" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="profit" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="shipping_cost" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="order_priority" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+            <Field name="year" size="254" source="File: D:\Datasets\SuperStore_Orders.csv\SuperStore_Orders.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="534" y="18" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Text Box (4)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="546" y="162" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="762" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">D:\Practice\Alteryx\Office Supplies.xlsx|||Sheet1</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <MipTenantId />
+            <PreserveFormat>False</PreserveFormat>
+            <MipSensitivity />
+            <UNCLocal>False</UNCLocal>
+            <SkipFieldNames>False</SkipFieldNames>
+            <SuppressBlankFile>False</SuppressBlankFile>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Office Supplies.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Question" />
+      <Destination ToolID="5" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="Action" />
+      <Destination ToolID="11" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="13" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (4)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Workflow 5</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ab266a5b-adf4-436e-bb43-ed2e3c5fb77b" />
+      <Telemetry>
+        <PreviousWorkflowId value="ffd9f37f-1603-4328-8985-7f25534215b8" />
+        <OriginWorkflowId value="ffd9f37f-1603-4328-8985-7f25534215b8" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="5" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Consumer</ReplaceText>
+              <Destination>2/Simple/Operands/Operand</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="13" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Furniture</ReplaceText>
+              <Destination>11/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>What segment you would like to filter</Description>
+              <Name>Text Box (4)</Name>
+              <ToolId value="4" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>What category you would like to filter</Description>
+              <Name>Text Box (12)</Name>
+              <ToolId value="12" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
