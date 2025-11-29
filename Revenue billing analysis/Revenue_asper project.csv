@@ -1,0 +1,7 @@
+project_name,month,billed_amount,unbilled_amount,provision_amount,revenue_type
+"Cloud Monitoring",February-2025,40000.00,35000.00,0.00,"Unbilled Revenue"
+"Data Pipeline Support",February-2025,50000.00,0.00,0.00,"Fully Billed"
+"ETL Maintenance",February-2025,0.00,0.00,60000.00,Provision
+"Cloud Monitoring",January-2025,0.00,75000.00,0.00,"Unbilled Revenue"
+"Data Pipeline Support",January-2025,50000.00,0.00,0.00,"Fully Billed"
+"ETL Maintenance",January-2025,0.00,0.00,60000.00,Provision

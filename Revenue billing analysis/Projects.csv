@@ -1,0 +1,4 @@
+project_id,client_id,project_name,monthly_contract_amount
+101,1,"Data Pipeline Support",50000.00
+102,2,"Cloud Monitoring",75000.00
+103,3,"ETL Maintenance",60000.00

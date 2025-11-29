@@ -1,0 +1,7 @@
+client_name,month,billed_amount,unbilled_amount,provision_amount,revenue_type
+Amazon,February-2025,50000.00,0.00,0.00,"Fully Billed"
+Netflix,February-2025,40000.00,35000.00,0.00,"Unbilled Revenue"
+Netflix,February-2025,0.00,0.00,60000.00,Provision
+Amazon,January-2025,0.00,0.00,60000.00,Provision
+Google,January-2025,50000.00,0.00,0.00,"Fully Billed"
+Google,January-2025,0.00,75000.00,0.00,"Unbilled Revenue"
